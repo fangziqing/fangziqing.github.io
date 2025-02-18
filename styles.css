@@ -15,6 +15,7 @@ body {
 .container {
     text-align: center;
     position: relative;
+    z-index: 1; /* 确保文字在爱心之上 */
 }
 
 .title {
@@ -44,6 +45,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     animation: heartbeat 1.5s infinite;
+    z-index: 0; /* 将爱心放在文字下方 */
 }
 
 .heart::before,
