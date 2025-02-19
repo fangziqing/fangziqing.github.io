@@ -15,7 +15,7 @@ body {
 .container {
     text-align: center;
     position: relative;
-    z-index: 1; /* 确保文字在爱心之上 */
+    z-index: 2; /* 提高文字的层级 */
 }
 
 .title {
@@ -45,7 +45,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     animation: heartbeat 1.5s infinite;
-    z-index: 0; /* 将爱心放在文字下方 */
+    z-index: 1; /* 爱心在文字之下，星星之上 */
 }
 
 .heart::before,
@@ -77,7 +77,7 @@ body {
     height: 100%;
     background: transparent;
     overflow: hidden;
-    z-index: -1;
+    z-index: 0; /* 星星在最底层 */
 }
 
 .stars::before {
