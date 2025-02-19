@@ -45,7 +45,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     animation: heartbeat 1.5s infinite;
-    z-index: -1; /* 爱心在文字之下，星星之上 */
+    z-index: 0; /* 爱心在文字之下，星星之上 */
 }
 
 .heart::before,
